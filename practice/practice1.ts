@@ -1,0 +1,3 @@
+interface PersonType {}
+
+const person = {}
