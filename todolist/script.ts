@@ -20,7 +20,9 @@ function addTodo() {
 }
 
 
-function deleteList(event: MouseEvent) {
-    const remove1: HTMLLIElement = (event.target as HTMLElement).parentElement as HTMLLIElement; //선택한 목록 한개만 지우기
-    remove1.remove();
+function allClearList() {
+    remove.innerText = '';     
 }
+
+button.addEventListener('click', addTodo);
+remove.addEventListener('click', allClearList);
