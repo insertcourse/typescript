@@ -8,7 +8,7 @@
 interface PersonType {
     name : string
     age : number
-    gender : string
+    gender : "F" | "M"
     job? : string //?를 붙이면 선택적인 요소
 }
 
@@ -17,7 +17,7 @@ const PersonType ={
     name1: "siyeon",
     age: 17,
     gender: {
-        female : "F",
+        female :"F",
         male : "M"
     },
     job:"student"
