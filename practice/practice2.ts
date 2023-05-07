@@ -6,22 +6,22 @@
 
 // filter : 배열을 특정 조건으로 걸러주는 메소드
 //홀수만 골라주는 코드
-let num : number[]=[2,3,4,5,6,7,8,9,]
-let sum : number[]=num.filter((value:number) => value % 2 !== 0)
+const num : number[]=[2,3,4,5,6,7,8,9,]
+const sum : number[]=num.filter((value:number) => value % 2 !== 0)
 console.log(sum)
 
 
 //map : 배열을 가공해서 다른 배열을 만들어내는 메소드
 //문자를 분해하는 코드
-let sy : string = "siyeon"
-let result : string[] = sy.split("").map((value : string) => value)
+const sy : string = "siyeon"
+const result : string[] = sy.split("").map((value : string) => value)
 console.log(result)
 //split : 분해하다
 
 
 //forEach : 배열의 각 요소에 대한 함수를 호출
 //생성된 배열을 출력하는 코드
-let num1 = [1,2,3]
+const num1 = [1,2,3]
 num.forEach(function (value){
     console.log(value)
 })
