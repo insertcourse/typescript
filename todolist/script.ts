@@ -6,7 +6,8 @@ const result: HTMLElement = document.getElementById('addTodo--text') as HTMLElem
 function addTodo() {
     if (!add.value) {
         alert('내용을 입력하세요!');
-    } else {
+    } 
+    if (add.value) {
         const list: HTMLLIElement = document.createElement("li");
         const del: HTMLButtonElement = document.createElement('button');
         list.innerHTML = add.value;
