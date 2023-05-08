@@ -19,8 +19,10 @@ function addTodo() {
     }
 }
 
-function deleteList(event: MouseEvent) {//이벤트 타입을 정해준 거임
-    const remove1: HTMLLIElement = (event.target as HTMLElement).parentElement as HTMLLIElement; //선택한 목록 한개만 지우기, target 속성을 HTMLElement로 지정
+
+function deleteList(event: MouseEvent) {
+    const { target } = event; // 이벤트 객체의 target 속성을 분해 
+    const remove1 = (target as HTMLElement).parentElement as HTMLLIElement;
     remove1.remove();
 }
 
