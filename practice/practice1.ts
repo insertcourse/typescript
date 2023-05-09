@@ -29,12 +29,13 @@ console.log(PersonType)
 //형식) const 변수명 = (매개변수명 : 자료형) =>{
 //     처리구문
 // }
-const person =(name:number, age:string, gender:string, job:string) => {
-    console.log(name)
-    console.log(age)
-    console.log(gender)
-    console.log(job)
+const person =(name3, age, gender, job) => {
+    name3: "siyeon"
+    age : 17
+    gender : "F"
+    job : "student"
 }
+
 
 
 
